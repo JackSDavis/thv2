@@ -35,7 +35,7 @@ async def stream_handler(request):
         logging.error(e)
         raise web.HTTPNotFound
         
-@routes.get("/download2222222/{message_id}")
+@routes.get("/download/{message_id}")
 @routes.get("/{message_id}")
 async def old_stream_handler(request):
     try:
